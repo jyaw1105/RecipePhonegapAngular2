@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+  width: 100vw;
+  height: 100vh;
+}
+button{
+  margin: 15px;
+  border-radius: 5px;
+}
+#containerConfirm{
+  border-radius: 5px;
+  margin:10px;
+  align-items: center;
+}
+#containerConfirm h2{
+  margin: 0;
+}
+#containerConfirm button{
+  border: none;
+  background: #FFF;
+  font-size: 18px;
+}

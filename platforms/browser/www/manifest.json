@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "RecipePhonegapAngular2",
+  "short_name": "RecipePhonegapAngular2",
+  "version": "com.angular2.phonegap.recipe",
+  "description": "Hello World sample application that responds to the deviceready event.",
+  "author": "PhoneGap Team",
+  "icons": [],
+  "start_url": "index.html"
+}

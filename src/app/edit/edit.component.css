@@ -1,0 +1,107 @@
+#add{
+  width: 100%;
+  height: 100%;
+  font-family:'SketchFlow-Print', SketchFlow-Print;
+  background: rgba(127,255,0,0.2);
+  font-size:12px;
+  display: block;
+  color: #228b22;
+}
+header{
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  background: rgba(127,255,0,0.2);
+}
+#textarea h2{
+  margin:0;
+  margin-left: 10px;
+  color: #228b22;
+}
+
+h3{
+  margin:0;
+  margin-left: 15px;
+}
+#error, #error h2{
+  margin:0;
+  margin-left: 10px;
+  color: red;
+  font-size: 10px;
+  text-align: center;
+}
+#textarea{
+  color: #228b22;
+  width: 100%;
+  float: left;
+  margin-top: 3px;
+  background: rgba(127,255,0,0.2);
+  height: 100%;
+}
+#btnBack{
+  align-items: center;
+  flex-direction: row;
+  align-self: center;
+  align-content: center;
+}
+
+header h1{
+    color: #228b22;
+    padding:0;
+    position:absolute;
+    z-index:2;
+    display: inline-block;
+    font-size:20px;
+    text-align:left;
+    font-weight:bold;
+    line-height:45px;
+    top:10; left:75;
+    border-bottom: 1px solid #eee;
+    margin-top: 3px;
+}
+#imgDone{
+    position:absolute;
+    right:0;
+    margin: 5px;
+}
+#btnCancel{
+  right: 0;
+  margin: 5px;
+  position: absolute;
+  margin-top: 5px;
+  margin-right: 50px;
+}
+textarea{
+  color: #228b22;
+  width: 90%;
+  display: block;
+  margin: 10px;
+  -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  background: rgba(127,255,0,0.2);
+  border-radius: 5px;
+  white-space: pre;
+}
+select{
+  margin: 10px;
+  font-size: 18px;
+  width: 50%;
+  color: #228b22;
+  background: rgba(127,255,0,0.2);
+  border-radius: 5px;
+}
+#btnDone{
+  margin: 5px;
+  color: #228b22;
+  background: rgba(127,255,0,0.2);
+  border-color: rgba(127,255,0,0.2);
+  border-radius: 5px;
+}
+#containerConfirm{
+  color: #228b22;
+  border-color: rgba(127,255,0,0.2);
+}
+#containerConfirm button{
+  color: #228b22;
+}

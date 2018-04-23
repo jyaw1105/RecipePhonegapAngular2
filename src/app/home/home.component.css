@@ -1,0 +1,99 @@
+#home{
+  font-family:'SketchFlow-Print', SketchFlow-Print;
+  font-size:12px;
+  background: rgba(255,105,180,0.2);
+  width: 100%;
+  height: 100%;
+}
+header{
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  background: rgba(255,105,180,0.2);
+}
+header h1{
+    color: #FF69B4;
+    padding:0;
+    position:absolute;
+    z-index:2;
+    display: inline-block;
+    font-size:20px;
+    text-align:left;
+    font-weight:bold;
+    line-height:45px;
+    top:10; left:75;
+    border-bottom: 1px solid #eee;
+    margin-top: 3px;
+}
+#btnFilter{
+    position:absolute;
+    right:0;
+    margin: 5px;
+}
+#btnAdd{
+  right: 0;
+  margin: 5px;
+  position: absolute;
+  margin-top: 5px;
+  margin-right: 50px;
+}
+#noRecipe{
+  text-align: center;
+}
+#searchContainer{
+  width: 100%;
+  position: relative;
+  height: 50px;
+  background: rgba(255,105,180,0.2);
+}
+#inputSearch{
+  width: 80%;
+  margin-left: 20px;
+  height:35px;
+  font-size: 15px;
+  color: #FF69B4;
+  background: rgba(255,182,193,0.1);
+  border-radius: 10px;
+}
+
+#btnSearch{
+  position:absolute;
+  right:0;
+  margin: 5px;
+}
+#recipelist, #typeGrp {
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 10px; margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #FF69B4;
+}
+#list, #listType{
+    padding: 15px;
+    display: block;
+    position: relative;
+    color: #FF69B4;
+    font-size: 16px;
+    overflow: hidden;
+    font-family: SketchFlow-Print;
+    margin-left: 5px;
+    margin-right: 15px;
+    border: none;
+    border-bottom: 1px solid #FF69B4;
+}
+#listType{
+    padding: 5px;
+    text-align: center;
+}
+#list a, #list a h2, #noRecipe{
+    position: relative;
+    color: #FF69B4;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: SketchFlow-Print;
+}
+
+#list p{
+  text-align: right;
+  font-size: 12px;
+}

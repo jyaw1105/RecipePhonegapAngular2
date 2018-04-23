@@ -1,0 +1,58 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-listpicker": {
+      "PACKAGE_NAME": "com.angular2.phonegap.recipe"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.phonegap.recipe"
+    }
+  }
+}

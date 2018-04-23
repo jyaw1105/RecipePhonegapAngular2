@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id='home'>
+    <header>
+      <img src="assets/ic_recipe.png" alt="ic_recipe" width="50" height="50"/>
+      <h1>{{title}}</h1>
+      <img src="assets/ic_add.png" id='btnAdd' (click)="clickAdd()" alt="ic_add" width="40" height="40"/>
+      <img [src]="imgType" id='btnFilter' (click)="clickFilter = !clickFilter" alt="ic_filter" width="40" height="40"/>
+    </header>
+  <div id=searchContainer>
+    <input type="search" id='inputSearch' [(ngModel)]='inputSearch' placeholder="Search for ingredient..."/>
+    <img id="btnSearch" src="assets/ic_search.png" (click)="search(inputSearch)" alt="ic_search" width="40" height="40" />
+  </div>
+  <div *ngIf="recipes.length === 0" id="noRecipe"><h2>No Recipe. Go create one.</h2></div>
+  <div id="listContainer">
+    <ul id=recipelist>
+      <li id="list" *ngFor="let recipe of recipes">
+        <a (click)="clickDetail(recipe)"><h2>{{recipe.name}}</h2><p *ngIf="showType">{{recipe.type}}</p></a>
+      </li>
+    </ul>
+  </div>
+</div>
+<app-dialog [(visible)]="clickFilter">
+    <ul id="typeGrp">
+      <li *ngFor="let t of typeList" id="listType" [ngStyle]="{'color': t === filterType ? 'rgba(255,182,193,0.5)' : '#FF69B4'}" (click)=getSelectedType(t)>
+        {{t}}
+      </li>
+    </ul>
+</app-dialog>

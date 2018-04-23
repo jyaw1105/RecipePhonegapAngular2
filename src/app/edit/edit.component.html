@@ -1,0 +1,30 @@
+<div id='add'>
+  <header>
+    <img src="assets/ic_back.png" (click)="back()" id="btnBack" alt="ic_back" width="40" height="40"/>
+    <h1>{{title}}</h1>
+    <img src="assets/ic_cancel.png" id='btnCancel' (click)="clickReset = !clickReset" alt="ic_cancel" width="40" height="40"/>
+    <img src="assets/ic_done.png" id='imgDone' (click)="clickDone()" alt="ic_done" width="40" height="40"/>
+  </header>
+  <div id="textarea">
+    <div *ngIf="!valid" id="error" [innerHTML]="error"></div>
+    <h2>Name  </h2>
+    <textarea type="text" [(ngModel)]='inputName' placeholder="Name">{{inputName}}</textarea>
+    <h2>Ingredient  </h2>
+    <textarea type="text" [(ngModel)]='inputIngredient' placeholder="Ingredient" rows="3">{{inputIngredient}}</textarea>
+    <h2>Step  </h2>
+    <textarea type="text" [(ngModel)]='inputStep' placeholder="Step" rows="4">{{inputStep}}</textarea>
+    <h2>Type  </h2>
+    <select [(ngModel)]="inputType" name="Select type" class="ui fluid search selection dropdown">
+      <option *ngFor="let type of typeList" [value]="type">{{type}}</option>
+    </select>
+    <button id="btnDone" (click)="clickDone()">Done</button>
+  </div>
+</div>
+<app-dialog [(visible)]="clickReset">
+  <div id="containerConfirm">
+    <h2>Are you sure to reset? </h2>
+    <h3>It will discard all changes.</h3>
+    <button style="position:absolute;right:0;bottom:0" (click)="reset()">Yes</button>
+    <button style="position:absolute;left:0;bottom:0">No</button>
+  </div>
+</app-dialog>

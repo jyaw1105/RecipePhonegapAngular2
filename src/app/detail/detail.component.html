@@ -1,0 +1,35 @@
+<div id='detail'>
+  <header>
+    <img src="assets/ic_back.png" id="imgBack" (click)="back()" alt="ic_recipe" width="50" height="50"/>
+    <h1>{{title}}</h1>
+    <img src="assets/ic_delete.png" id='btnDelete' (click)="clickDelete = !clickDelete" alt="ic_filter" width="40" height="40"/>
+    <img src="assets/ic_edit.png" id='btnEdit' (click)="clickEdit()" alt="ic_add" width="40" height="40"/>
+  </header>
+
+  <div id="details">
+    <div class="section">
+    <h2 style="color:rgba(0,0,229,0.5)">Name:  </h2>
+    <h2>{{detailName}}</h2>
+    </div>
+    <div class="section">
+    <h2 style="color:rgba(0,0,229,0.5)">Ingredient:  </h2>
+    <h2>{{detailIngredient}}</h2>
+    </div>
+    <div class="section">
+    <h2 style="color:rgba(0,0,229,0.5)">Step:  </h2>
+    <h2>{{detailStep}}</h2>
+    </div>
+    <div class="section">
+    <h2 style="color:rgba(0,0,229,0.5)">Type:  </h2>
+    <h2>{{detailType}}</h2>
+    <img [src]="imgType" style="float:right" alt="img_type" width="40" height="40"/>
+    </div>
+  </div>
+</div>
+<app-dialog [(visible)]="clickDelete">
+  <div id="containerConfirm">
+    <h2>Are you sure to Delete? </h2>
+    <button style="position:absolute;right:0;bottom:0" (click)="delete()">Yes</button>
+    <button style="position:absolute;left:0;bottom:0">No</button>
+  </div>
+</app-dialog>
