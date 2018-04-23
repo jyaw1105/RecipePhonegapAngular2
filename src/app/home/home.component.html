@@ -3,12 +3,12 @@
     <header>
       <img src="assets/ic_recipe.png" alt="ic_recipe" width="50" height="50"/>
       <h1>{{title}}</h1>
-      <img src="assets/ic_add.png" id='btnAdd' (click)="clickAdd()" alt="ic_add" width="40" height="40"/>
-      <img [src]="imgType" id='btnFilter' (click)="clickFilter = !clickFilter" alt="ic_filter" width="40" height="40"/>
+      <img src="assets/ic_add.png" id='btnAdd' (click)="clickAdd()" alt="ic_add" width="50" height="50"/>
+      <img [src]="imgType" id='btnFilter' (click)="clickFilter = !clickFilter" alt="ic_filter" width="50" height="50"/>
     </header>
   <div id=searchContainer>
     <input type="search" id='inputSearch' [(ngModel)]='inputSearch' placeholder="Search for ingredient..."/>
-    <img id="btnSearch" src="assets/ic_search.png" (click)="search(inputSearch)" alt="ic_search" width="40" height="40" />
+    <img id="btnSearch" src="assets/ic_search.png" (click)="search(inputSearch)" alt="ic_search" width="50" height="50" />
   </div>
   <div *ngIf="recipes.length === 0" id="noRecipe"><h2>No Recipe. Go create one.</h2></div>
   <div id="listContainer">

@@ -3,6 +3,9 @@ html{
   width: 100vw;
   height: 100vh;
 }
+body{
+  margin: 0;
+}
 button{
   margin: 15px;
   border-radius: 5px;

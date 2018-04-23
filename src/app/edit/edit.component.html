@@ -1,9 +1,9 @@
 <div id='add'>
   <header>
-    <img src="assets/ic_back.png" (click)="back()" id="btnBack" alt="ic_back" width="40" height="40"/>
+    <img src="assets/ic_back.png" (click)="back()" id="btnBack" alt="ic_back" width="50" height="50"/>
     <h1>{{title}}</h1>
-    <img src="assets/ic_cancel.png" id='btnCancel' (click)="clickReset = !clickReset" alt="ic_cancel" width="40" height="40"/>
-    <img src="assets/ic_done.png" id='imgDone' (click)="clickDone()" alt="ic_done" width="40" height="40"/>
+    <img src="assets/ic_cancel.png" id='btnCancel' (click)="clickReset = !clickReset" alt="ic_cancel" width="50" height="50"/>
+    <img src="assets/ic_done.png" id='imgDone' (click)="clickDone()" alt="ic_done" width="50" height="50"/>
   </header>
   <div id="textarea">
     <div *ngIf="!valid" id="error" [innerHTML]="error"></div>
